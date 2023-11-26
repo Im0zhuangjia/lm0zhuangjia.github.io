@@ -1,0 +1,39 @@
+---
+title: #（此项为标题名字）
+tags: #（此项为标签内容）
+categories: #（此项为分类内容）
+date: #（此项为时间） 
+---
+
+由于插件问题，不允许有时间（date）。
+#前需要空一格，以下为示例：
+
+---
+title: 如何使用WattToolKit加速器
+tags: 
+-加速器
+-wattToolKit
+categories: 
+-教程
+-加速器教程
+-steam前骤
+
+---
+
+总点击量<span id="busuanzi_value_site_uv"></span>次
+总访问量<span id="busuanzi_value_site_pv"></span>次
+
+中文部分都可修改，整段代码在md文章什么位置就显示在什么位置
+居中需要额外用代码居中
+推荐使用文章引用的方法直接变换样式，只影响外观，又可以变得美观。
+
+关于超链接的使用：
+建议直接采用超链接的形式，如果需要放视频推荐一定要先分好类。
+避免网站主页数据过多导致加载卡顿。
+<iframe src="//player.bilibili.com/player.html?aid=928861104&bvid=BV1uT4y1P7CX&cid=287639008&p=1&autoplay=0" 
+scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+以上为示例
+推荐使用官网视频链接而不是镜像链接。
+更换说明：aid，bvid，cid为视频号组成 autoplay0是关1是自动播放视频，很不推荐打开
+以下参数可自行百度和添加删减
