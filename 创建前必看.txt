@@ -1,10 +1,13 @@
+为了方面管理，所有文章tag和cate均以测试文档为标准。若测试文档有类似
+tag则采用测试文档，没有可自行添加。
+tag不超过5个，cate不超过3个  <!--more-->)    固定在第50行。
+
 ---
 title: #（此项为标题名字）
 tags: #（此项为标签内容）
 categories: #（此项为分类内容）
-date: #（此项为时间） 
 ---
-
+date: #（此项为时间） 
 由于插件问题，不允许有时间（date）。
 #前需要空一格，以下为示例：
 
@@ -37,3 +40,7 @@ scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="tru
 推荐使用官网视频链接而不是镜像链接。
 更换说明：aid，bvid，cid为视频号组成 autoplay0是关1是自动播放视频，很不推荐打开
 以下参数可自行百度和添加删减
+
+
+<!--more-->)
+输入以上字符段折叠文章

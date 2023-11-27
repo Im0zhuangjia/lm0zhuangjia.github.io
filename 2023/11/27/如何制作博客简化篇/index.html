@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>第一篇文章 |  Library Of Straw</title>
+      <title>如何制作博客简化篇 |  Library Of Straw</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -79,7 +79,7 @@ ga('send', 'pageview');
     <main class="content on">
       <section class="outer">
   <article
-  id="post-第一篇文章"
+  id="post-如何制作博客简化篇"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -90,7 +90,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  第一篇文章
+  如何制作博客简化篇
 </h1>
  
 
@@ -98,11 +98,11 @@ ga('send', 'pageview');
     </header>
      
     <div class="article-meta">
-      <a href="/2023/11/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="article-date">
-  <time datetime="2023-11-25T13:15:10.071Z" itemprop="datePublished">2023-11-25</time>
+      <a href="/2023/11/27/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E7%AE%80%E5%8C%96%E7%AF%87/" class="article-date">
+  <time datetime="2023-11-27T08:37:10.401Z" itemprop="datePublished">2023-11-27</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/2023/">2023</a> / <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a> / <a class="article-category-link" href="/categories/%E7%BA%AA%E5%BF%B5/">纪念</a>
+    <a class="article-category-link" href="/categories/2023/">2023</a> / <a class="article-category-link" href="/categories/2023/%E6%95%99%E7%A8%8B/">教程</a>
   </div>
   
 <div class="word_count">
@@ -110,7 +110,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">14</span>
+            <span class="post-count">716</span>
         </span>
     </span>
 
@@ -119,7 +119,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -132,9 +132,89 @@ ga('send', 'pageview');
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><del>BUG多的我头痛。</del></p>
-<p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
+  <p style="color: #EE86FF;"><b>该教程为了更适合零基础的朋友来照搬，将省略大多数不必需的解释和选择。<br/>以便照搬过程中不会出现意料之外的错误，如有需求请移至进阶篇。<b></p>
+首先你需要准备以下工具：<br/>
+1. 至少win7以上系统且可以联网的电脑<br/>
+2. 200MB-1GB的内存空间<br/>
+3. git<br/>
+4. nodeJS<br/>
+5. hexo<br/>
+6. gitee账号<br/>
+7. 一颗不会放弃的心<br/>
+8. 做好查文档的准备<br/>
+<br/>
+<b>那么，开始了！<b><br/>
+第一步，安装git<br/>
+进入官网 https://git-scm.com/<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://git-scm.com/<br></code></pre></td></tr></table></figure>
+<br/>
+点击下载——选择设备类型——选择版本<br/>
+下好后安装git<br/>
+安装选项可全部默认，无脑点下一步（next）即可<br/>
+不会管理员命令的在这一步多勾选一项【创建快捷图标】<br/>
+完成安装，回到桌面<br/>
+按下鼠标右键，会多出两行新的东西<br/>
+点击Git Bash Here<br/>
+输入<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">git -v<br></code></pre></td></tr></table></figure>
+<br/>
+得到git version 2.42.0.rc0.windows.1类似的信息即是安装成功~<br/>
+接着下载node https://nodejs.org/en/<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://nodejs.org/en/<br></code></pre></td></tr></table></figure>
+<br/>
+一样无脑安装即可<br/>
+安装完后按下xin【键盘左下角类似田字的图标】+R键<br/>
 <span id="more"></span>)
+输入
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cmd<br></code></pre></td></tr></table></figure>
+<br/>
+在打开的窗口中输入
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm -v<br></code></pre></td></tr></table></figure>
+<br/>
+接着输入
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">node -v<br></code></pre></td></tr></table></figure>
+<br/>
+若出现类似v20.1.1的数字即可代表成功。<br/>
+以上两个程序在安装时如果自定义了安装路径，请牢记路径位置，后面可能会用。<br/>
+接着我们打开hexo官网 https://hexo.io/themes/，选择一个您想要的主题样式<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://hexo.io/themes/<br></code></pre></td></tr></table></figure>
+<br/>
+如果您想要的主题样式没有中文安装说明或者不支持高版本，以及其他情况。<br/>
+我推荐您采用kira的主题样式，该主题的作者贴心的写了中文安装说明，一键安装指令和配置文件注释。<br/>
+首先您需要在您喜欢的路径下创建一个新的文件夹。<br/>
+我推荐您在D盘根目录下创建。<br/>
+将文件夹名改为：<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">blog<br></code></pre></td></tr></table></figure>
+<br/>
+该文件夹是用来储存hexo和主题以及博客的，您也可以自行起名<br/>
+在该文件夹内使用管理员权限执行git base<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm create kira-hexo@latest myblog<br></code></pre></td></tr></table></figure>
+<br/>
+若您不会可以回到桌面，右键Git Base，以管理员模式运行<br/>
+cd进入您刚才创建的文件夹，若您按我的推荐来的则输入：<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cd &quot;D:\blog&quot;<br></code></pre></td></tr></table></figure>
+<br/>
+然后再输入：<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm create kira-hexo@latest myblog<br></code></pre></td></tr></table></figure>
+<br/>
+等待安装完毕即可<br/>
+待您安装完毕后分别输入：<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm install<br></code></pre></td></tr></table></figure>
+<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo init<br></code></pre></td></tr></table></figure>
+<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo g<br></code></pre></td></tr></table></figure>
+<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo s<br></code></pre></td></tr></table></figure>
+<br/>
+打开生成的链接即可预览本地网站<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">http://localhost:4000<br></code></pre></td></tr></table></figure>
+<br/>
+到这一步，您的博客已经搭好了，剩下的就是美化博客以及让别人浏览你的博客了。<br/>
+
+<p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
+<!--more-->)
+
  
       <!-- reward -->
       
@@ -205,12 +285,12 @@ ga('send', 'pageview');
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/11/25/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/11/27/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E7%AE%80%E5%8C%96%E7%AF%87/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E2%80%9C2023%E2%80%9D/" rel="tag">“2023”</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AB%99%E4%B8%BB/" rel="tag">站主</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%AA%E5%BF%B5/" rel="tag">纪念</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9B%B6%E5%9F%BA%E7%A1%80/" rel="tag">零基础</a></li></ul>
 
     </footer>
   </div>
@@ -218,15 +298,20 @@ ga('send', 'pageview');
    
   <nav class="article-nav">
     
-      <a href="/2023/11/26/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/" class="article-nav-link">
+      <a href="/2023/11/27/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E7%AF%87/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            测试文档
+            如何制作博客进阶篇
           
         </div>
       </a>
     
+    
+      <a href="/2023/11/26/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">测试文档</div>
+      </a>
     
   </nav>
 
