@@ -64,17 +64,9 @@ ga('send', 'pageview');
 <body>
   <div id="app">
     
-      <canvas class="fireworks"></canvas>
-      <style>
-        .fireworks {
-          position: fixed;
-          left: 0;
-          top: 0;
-          z-index: 99999;
-          pointer-events: none;
-        }
-      </style>
       
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
       <section class="outer">
@@ -110,7 +102,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">14</span>
+            <span class="post-count">130</span>
         </span>
     </span>
 
@@ -132,8 +124,17 @@ ga('send', 'pageview');
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>该文章编写中</p>
-<span id="more"></span>)
+  <p style="color: #EE86FF;"><b>欢迎来到进阶篇，相信您已经阅读了简化篇或者您有一定的基础<br/>
+该教程目的是为了帮助零基础的朋友去大概理解博客是怎么搭建的<br/>
+同时该篇也是简化篇的常见问题答疑篇<b></p><br/>
+一、博客的基本框架和工具的选择br/>
+二、hexo生成的blog文件夹组成br/>
+三、hexo常见问题br/>
+四、hexo主题常见问题br/>
+五、插件br/>
+
+<p>该文章编写中</p>
+<span id="more"></span>
 <p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
  
       <!-- reward -->
@@ -284,6 +285,11 @@ ga('send', 'pageview');
     </ul>
     <ul>
       
+      <li>
+          <img src="/images/beian.png"></img>
+          <a href="http://www.beian.gov.cn/portal/" target="_black" rel="nofollow">备案审核中</a>
+      </li>
+        
     </ul>
     <ul>
       <li>
@@ -539,12 +545,10 @@ ga('send', 'pageview');
 
 <!-- ClickBoom1 -->
 
-<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
-
-<script src="/js/clickBoom1.js"></script>
- 
 <!-- ClickBoom2 -->
-
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
 <!-- CodeCopy -->
  
 <link rel="stylesheet" href="/css/clipboard.css">

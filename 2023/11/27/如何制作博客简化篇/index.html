@@ -64,17 +64,9 @@ ga('send', 'pageview');
 <body>
   <div id="app">
     
-      <canvas class="fireworks"></canvas>
-      <style>
-        .fireworks {
-          position: fixed;
-          left: 0;
-          top: 0;
-          z-index: 99999;
-          pointer-events: none;
-        }
-      </style>
       
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
       <section class="outer">
@@ -110,7 +102,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">716</span>
+            <span class="post-count">1.4k</span>
         </span>
     </span>
 
@@ -119,7 +111,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">5 分钟</span>
         </span>
     </span>
 </div>
@@ -132,7 +124,8 @@ ga('send', 'pageview');
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p style="color: #EE86FF;"><b>该教程为了更适合零基础的朋友来照搬，将省略大多数不必需的解释和选择。<br/>以便照搬过程中不会出现意料之外的错误，如有需求请移至进阶篇。<b></p>
+  <p style="color: #EE86FF;"><b>该教程为了更适合零基础的朋友来照搬，将省略大多数不必需的解释和选择。<br/>
+以便照搬过程中不会出现意料之外的错误，如有需求请移至进阶篇。<b></p>
 首先你需要准备以下工具：<br/>
 1. 至少win7以上系统且可以联网的电脑<br/>
 2. 200MB-1GB的内存空间<br/>
@@ -149,7 +142,13 @@ ga('send', 'pageview');
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://git-scm.com/<br></code></pre></td></tr></table></figure>
 <br/>
 点击下载——选择设备类型——选择版本<br/>
+https://pic.imgdb.cn/item/65649f25c458853aefe21797.png <br/>
+https://pic.imgdb.cn/item/65649f30c458853aefe24732.png <br/>
+https://pic.imgdb.cn/item/65649f35c458853aefe25c61.png <br/>
+https://pic.imgdb.cn/item/65649f3ac458853aefe26f3c.png <br/>
+#插件文件还没写，先用链接将就。<br/>
 下好后安装git<br/>
+https://pic.imgdb.cn/item/65649f3cc458853aefe27c33.png <br/>
 安装选项可全部默认，无脑点下一步（next）即可<br/>
 不会管理员命令的在这一步多勾选一项【创建快捷图标】<br/>
 完成安装，回到桌面<br/>
@@ -159,12 +158,13 @@ ga('send', 'pageview');
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">git -v<br></code></pre></td></tr></table></figure>
 <br/>
 得到git version 2.42.0.rc0.windows.1类似的信息即是安装成功~<br/>
+第二步，安装node<br/>
 接着下载node https://nodejs.org/en/<br/>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://nodejs.org/en/<br></code></pre></td></tr></table></figure>
 <br/>
 一样无脑安装即可<br/>
 安装完后按下xin【键盘左下角类似田字的图标】+R键<br/>
-<span id="more"></span>)
+<span id="more"></span>
 输入
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cmd<br></code></pre></td></tr></table></figure>
 <br/>
@@ -176,6 +176,7 @@ ga('send', 'pageview');
 <br/>
 若出现类似v20.1.1的数字即可代表成功。<br/>
 以上两个程序在安装时如果自定义了安装路径，请牢记路径位置，后面可能会用。<br/>
+第三步，安装主题&hexo<br/>
 接着我们打开hexo官网 https://hexo.io/themes/，选择一个您想要的主题样式<br/>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://hexo.io/themes/<br></code></pre></td></tr></table></figure>
 <br/>
@@ -198,6 +199,7 @@ cd进入您刚才创建的文件夹，若您按我的推荐来的则输入：<br
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm create kira-hexo@latest myblog<br></code></pre></td></tr></table></figure>
 <br/>
 等待安装完毕即可<br/>
+第四步，环境配置<br/>
 待您安装完毕后分别输入：<br/>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm install<br></code></pre></td></tr></table></figure>
 <br/>
@@ -211,8 +213,106 @@ cd进入您刚才创建的文件夹，若您按我的推荐来的则输入：<br
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">http://localhost:4000<br></code></pre></td></tr></table></figure>
 <br/>
 到这一步，您的博客已经搭好了，剩下的就是美化博客以及让别人浏览你的博客了。<br/>
+第五步，远程仓库<br/>
+首先你需要注册一个gitee账号，请前往该网站注册：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://gitee.com/<br></code></pre></td></tr></table></figure>
+<br/>
+接着点击右上角【账号设置】，接着您需要实名认证。<br/>
+实名认证后点击右上角【个人主页】，复制您的个人空间地址<br/>
+也就是网址栏中gitee.com/的右半部分。<br/>
+然后点击右上角+号，新建仓库。<br/>
+仓库名称随意填写，路径填写您刚刚复制的个人空间地址。<br/>
+点击【创建】。<br/>
+接着将git全局设置的代码复制到git base中运行。<br/>
+然后输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ssh-keygen -t rsa -C &quot;您的邮箱地址&quot;<br></code></pre></td></tr></table></figure>
+<br/>
+然后按3次回车【键盘空格键】。<br/>
+输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cat ~/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure>
+<br/>
+复制您的密钥【刚刚生成的一堆字母数字】<br/>
+点击刚刚创建的gitee仓库，点击右上角【设置】<br/>
+在左侧点击ssh公钥。<br/>
+标题随便填，公钥就是刚刚你负责的一堆字母数字。<br/>
+然后确认。<br/>
+最后在gitbase中输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ssh -T git@gitee.com<br></code></pre></td></tr></table></figure>
+<br/>
+返回【successfully】就代表成功了~<br/>
+第六步，配置修改<br/>
+在您刚刚创建的仓库中找到SSH地址，在快速设置的下面。<br/>
+有HTTPS和SSH两个，点击SSH，复制右边的地址。<br/>
+打开你的博客文件夹【D/blog】,找到_config.yml文件。<br/>
+打开后翻到最下面完善代码<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">deploy:<br>  type: &#x27;git&#x27;<br>  repository: SSH地址<br><br></code></pre></td></tr></table></figure>
+#如果不全请您补全，type和repos的后面有一个空格。<br/>
+保存文件后退出。<br/>
+接着在【blog】文件夹下打开git base。<br/>
+输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+<br/>
+然后输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo g<br></code></pre></td></tr></table></figure>
+<br/>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo s<br></code></pre></td></tr></table></figure>
+<br/>
+预览您的博客，确认没有问题后输入：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo d<br></code></pre></td></tr></table></figure>
+<br/>
+然后打开您创建的仓库，应该可以看到您上传的文件了。<br/>
+接着点击右上角【管理】，将仓库开源。<br/>
+再点击【服务】，选择【gitee pages服务】。<br/>
+勾选【使用https】，最后点击更新。<br/>
+gitee就会给您一个别人可以浏览的网址了~<br/>
 
-<p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
+<p style="color: #EE60FF;"><b>恭喜您，您已经成功拥有了一个属于自己的博客<br/>
+虽然您的博客内容还比较简陋，但我相信这只是您的开始<br/>
+如果您在操作中遇到了问题可以查看进阶篇，或者联系我<br/>
+希望您能从中学到不少~<b></p><br/>
+<br/><br/><br/>
+浏览量<span id="busuanzi_value_site_pv"></span>次
+访问数<span id="busuanzi_value_site_uv"></span>人
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--more-->)
 
  
@@ -364,6 +464,11 @@ cd进入您刚才创建的文件夹，若您按我的推荐来的则输入：<br
     </ul>
     <ul>
       
+      <li>
+          <img src="/images/beian.png"></img>
+          <a href="http://www.beian.gov.cn/portal/" target="_black" rel="nofollow">备案审核中</a>
+      </li>
+        
     </ul>
     <ul>
       <li>
@@ -619,12 +724,10 @@ cd进入您刚才创建的文件夹，若您按我的推荐来的则输入：<br
 
 <!-- ClickBoom1 -->
 
-<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
-
-<script src="/js/clickBoom1.js"></script>
- 
 <!-- ClickBoom2 -->
-
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
 <!-- CodeCopy -->
  
 <link rel="stylesheet" href="/css/clipboard.css">
