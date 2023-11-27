@@ -87,7 +87,7 @@ ga('send', 'pageview');
     
   <div class="cover-frame">
     <div class="bg-box">
-      <img src="/images/cover12.jpg" alt="image frame" />
+      <img src="/images/cover12t.jpg" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
       <h1><a href="/">Library Of Straw</a></h1>
@@ -99,7 +99,7 @@ ga('send', 'pageview');
       <div>
         
         <img
-          src="true /images/ayer.svg"
+          src="/images/ayer.svg"
           class="cover-logo"
           alt="Library Of Straw"
         />
@@ -122,7 +122,7 @@ ga('send', 'pageview');
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['欢迎您旅行者', '这里是萌新的图书馆', '来即是客，请参观~'],
+        strings: ['欢迎您旅行者☺', '这里是隐世的图书馆☃', '来即是客，请参观❤'],
         startDelay: 10,
         typeSpeed: 200,
         loop: true,
@@ -265,7 +265,7 @@ scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="tru
 
 
 
-<p>该文章点击量<span id="busuanzi_value_site_uv"></span>次<br>该文章访问量<span id="busuanzi_value_site_uv"></span>次</p>
+<p>该文章点击量<span id="busuanzi_value_site_pv"></span>次<br>该文章访问量<span id="busuanzi_value_site_uv"></span>次</p>
  
       <!-- reward -->
       
@@ -697,7 +697,19 @@ scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="tru
     <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
         src="//music.163.com/outchain/player?type=2&id=1363687284&auto=0&height=32"></iframe>
 </div>
-
+<div id="left_layer" style="position:absolute; top:280px; right:25px;">
+  <div id="sakana-widget"></div>
+  <script>
+    function initSakanaWidget() {
+      new SakanaWidget({controls: true,size: 120}).mount('#sakana-widget');
+    }
+  </script>
+  <script
+    async
+    onload="initSakanaWidget()"
+    src="https://cdn.jsdelivr.net/npm/sakana-widget@2.2.2/lib/sakana.min.js"
+  ></script>
+</div>
 <style>
     #music {
         position: fixed;
