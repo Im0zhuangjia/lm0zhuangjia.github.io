@@ -284,13 +284,39 @@ ga('send', 'pageview');
   <p style="color: #EE86FF;"><b>欢迎来到进阶篇，相信您已经阅读了简化篇或者您有一定的基础<br/>
 该教程目的是为了帮助零基础的朋友去大概理解博客是怎么搭建的<br/>
 同时该篇也是简化篇的常见问题答疑篇<b></p><br/>
-一、博客的基本框架和工具的选择br/>
-二、hexo生成的blog文件夹组成br/>
-三、hexo常见问题br/>
-四、hexo主题常见问题br/>
-五、插件br/>
-
-<p>该文章编写中</p> 
+一、工具的选择<br/><br/>
+1. 为什么我们需要使用hexo？<br/><br/>
+hexo本质是一个基于 Node.js 的博客框架，支持 Markdown<br/>
+一键部署和插件和可扩展性。让你轻松创建和管理博客。<br/>
+使用hexo拥有了大量的基础使用人群。<br/>
+当然还有其他的选择来搭建框架，比如【hugo】【halo】【wordpress】<br/>
+这里就不再细讲，我们主要就是看重hexo的使用人群多。<br/><br/>
+2. 为什么我们要使用gitee作为仓库？<br/>
+很简单，因为很多使用hexo的群体大多数是零基础的小白。<br/>
+所以对于科学上网，域名等不了解。<br/>
+而gitee作为国内“老牌企业”的产品，拥有稳定性，便捷性的特点。<br/>
+那么如果你不想用gitee呢？我可以推荐您使用github。<br/>
+github会比giteee好那么一点点，我其实更推荐去github的。<br/><br/>
+二、hexo生成的blog文件夹组成<br/>
+blog文件其实就是你的网页构成文件。<br/>
+主要分为：<br/><br/>
+【languager】是你的语言包，可以更改大部分的文字。<br/><br/>
+文件形式为yml，内容基本是英文对照中文。<br/>
+这里有一个小技巧，你可以对照文件，找到自己下载的博客<br/>
+有什么可更改的地方以及方便自己自定义。<br/><br/>
+【layout】插件和网页构成。<br/>
+一般不需要更改，要改的话更多是改变插件的一些<br/>
+自定义设置，比如live2D的位置。<br/><br/>
+【themes】主题存放文件夹。<br/>
+包含你下载的主题，如果没有可以去node_mod文件夹<br/>
+然后找到hexo-themes-你的主题。<br/>
+为什么会到这个文件夹里，这里就不细讲了。<br/><br/>
+【source】资源储存文件夹。<br/>
+最主要的文件夹，请多备份。<br/>
+里面包含你的图形资源，文章，文章分类设置，标签设置等。<br/>
+你可以使用hexo list指令查询。<br/><br/>
+这里需要注意，文章一般都是用blog根目录的source更改的。<br/>
+里面的文件多是.md文件，如果你需要新建文章。<br/> 
       <a class="article-more-link" href="/2023/11/27/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E7%AF%87/"
         >阅读更多☝</a
       >
@@ -360,32 +386,27 @@ ga('send', 'pageview');
 <br/>
 <b>那么，开始了！<b><br/>
 第一步，安装git<br/>
-进入官网 https://git-scm.com/<br/>
+进入官网<br/> 
+<a href="https://git-scm.com/" title="[打不开自行百度]" target="">Git官网</a><br/>
+<br/>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://git-scm.com/<br></code></pre></td></tr></table></figure>
 <br/>
 点击下载——选择设备类型——选择版本<br/>
-https://pic.imgdb.cn/item/65649f25c458853aefe21797.png <br/>
-https://pic.imgdb.cn/item/65649f30c458853aefe24732.png <br/>
-https://pic.imgdb.cn/item/65649f35c458853aefe25c61.png <br/>
-https://pic.imgdb.cn/item/65649f3ac458853aefe26f3c.png <br/>
-#插件文件还没写，先用链接将就。<br/>
+<a href="https://pic.imgdb.cn/item/65649f25c458853aefe21797.png" title="[git]" target="">点击下载</a> <br/>
+<a href="https://pic.imgdb.cn/item/65649f30c458853aefe24732.png" title="[git]" target="">选择类型</a> <br/>
+<a href="https://pic.imgdb.cn/item/65649f35c458853aefe25c61.png" title="[git]" target="">选择版本</a> <br/>
+<br/>
 下好后安装git<br/>
-https://pic.imgdb.cn/item/65649f3cc458853aefe27c33.png <br/>
 安装选项可全部默认，无脑点下一步（next）即可<br/>
 不会管理员命令的在这一步多勾选一项【创建快捷图标】<br/>
+<a href="https://pic.imgdb.cn/item/65649f3ac458853aefe26f3c.png" title="[git]" target="">创建图标</a> <br/>
 完成安装，回到桌面<br/>
 按下鼠标右键，会多出两行新的东西<br/>
 点击Git Bash Here<br/>
 输入<br/>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">git -v<br></code></pre></td></tr></table></figure>
 <br/>
-得到git version 2.42.0.rc0.windows.1类似的信息即是安装成功~<br/>
-第二步，安装node<br/>
-接着下载node https://nodejs.org/en/<br/>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">https://nodejs.org/en/<br></code></pre></td></tr></table></figure>
-<br/>
-一样无脑安装即可<br/>
-安装完后按下xin【键盘左下角类似田字的图标】+R键<br/> 
+得到git version 2.42.0.rc0.windows.1类似的信息即是安装成功~<br/> 
       <a class="article-more-link" href="/2023/11/27/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E7%AE%80%E5%8C%96%E7%AF%87/"
         >阅读更多☝</a
       >
@@ -448,11 +469,10 @@ https://pic.imgdb.cn/item/65649f3cc458853aefe27c33.png <br/>
 <ins>插入字</ins>
 <sup>上标字</sup>123
 123<sub>下标字</sub>
-`redis` 是非常重要的。
-1. 第一
-2. 第二
-一加点加空格加字
-<li style="margin-left: 40px;font-size: 15px">123</li>
+
+<ol>
+<li>第一</li>
+<li>第二<br>一加点加空格加字<li style="margin-left: 40px;font-size: 15px">123</li>
 <li style="margin-left: 40px;font-size: 30px">234</li>
 <li style="margin-left: 40px;font-size: 60px">345</li>
 <li style="margin-left: 40px;font-size: 15px">456</li><li style="margin-left: 40px;font-size: 15px">567</li><li style="margin-left: 40px;font-size: 15px">789</li>
@@ -461,18 +481,21 @@ https://pic.imgdb.cn/item/65649f3cc458853aefe27c33.png <br/>
 |一|二|三|
 |表格|属性|样式|
 |---|---|---|
-|一|二|你在此处等着<br/>我去买几个橘子|
-- 1
-    - 1
-        - 1
-            - 1
-- 2
-- 3
-<br/>
-
-<h1 id=""><a href="#" class="headerlink" title="***"></a>***</h1><br/>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&#123;% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;<br>Every interaction is both precious and an opportunity to delight.<br>&#123;% endblockquote %&#125;<br></code></pre></td></tr></table></figure> 
+|一|二|你在此处等着<br/>我去买几个橘子|</li>
+</ol>
+<ul>
+<li>1<ul>
+<li>1<ul>
+<li>1<ul>
+<li>1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2</li>
+<li>3 
       <a class="article-more-link" href="/2023/11/26/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/"
         >阅读更多☝</a
       >

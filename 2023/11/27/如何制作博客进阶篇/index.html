@@ -102,7 +102,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">130</span>
+            <span class="post-count">840</span>
         </span>
     </span>
 
@@ -111,7 +111,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -127,14 +127,77 @@ ga('send', 'pageview');
   <p style="color: #EE86FF;"><b>欢迎来到进阶篇，相信您已经阅读了简化篇或者您有一定的基础<br/>
 该教程目的是为了帮助零基础的朋友去大概理解博客是怎么搭建的<br/>
 同时该篇也是简化篇的常见问题答疑篇<b></p><br/>
-一、博客的基本框架和工具的选择br/>
-二、hexo生成的blog文件夹组成br/>
-三、hexo常见问题br/>
-四、hexo主题常见问题br/>
-五、插件br/>
+一、工具的选择<br/><br/>
+1. 为什么我们需要使用hexo？<br/><br/>
+hexo本质是一个基于 Node.js 的博客框架，支持 Markdown<br/>
+一键部署和插件和可扩展性。让你轻松创建和管理博客。<br/>
+使用hexo拥有了大量的基础使用人群。<br/>
+当然还有其他的选择来搭建框架，比如【hugo】【halo】【wordpress】<br/>
+这里就不再细讲，我们主要就是看重hexo的使用人群多。<br/><br/>
+2. 为什么我们要使用gitee作为仓库？<br/>
+很简单，因为很多使用hexo的群体大多数是零基础的小白。<br/>
+所以对于科学上网，域名等不了解。<br/>
+而gitee作为国内“老牌企业”的产品，拥有稳定性，便捷性的特点。<br/>
+那么如果你不想用gitee呢？我可以推荐您使用github。<br/>
+github会比giteee好那么一点点，我其实更推荐去github的。<br/><br/>
+二、hexo生成的blog文件夹组成<br/>
+blog文件其实就是你的网页构成文件。<br/>
+主要分为：<br/><br/>
+【languager】是你的语言包，可以更改大部分的文字。<br/><br/>
+文件形式为yml，内容基本是英文对照中文。<br/>
+这里有一个小技巧，你可以对照文件，找到自己下载的博客<br/>
+有什么可更改的地方以及方便自己自定义。<br/><br/>
+【layout】插件和网页构成。<br/>
+一般不需要更改，要改的话更多是改变插件的一些<br/>
+自定义设置，比如live2D的位置。<br/><br/>
+【themes】主题存放文件夹。<br/>
+包含你下载的主题，如果没有可以去node_mod文件夹<br/>
+然后找到hexo-themes-你的主题。<br/>
+为什么会到这个文件夹里，这里就不细讲了。<br/><br/>
+【source】资源储存文件夹。<br/>
+最主要的文件夹，请多备份。<br/>
+里面包含你的图形资源，文章，文章分类设置，标签设置等。<br/>
+你可以使用hexo list指令查询。<br/><br/>
+这里需要注意，文章一般都是用blog根目录的source更改的。<br/>
+里面的文件多是.md文件，如果你需要新建文章。<br/>
+<span id="more"></span><br/>
+可以使用：
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo new &quot;你的文章标题&quot;    #也可以重命名文件<br></code></pre></td></tr></table></figure>
 
-<p>该文章编写中</p>
-<span id="more"></span>
+
+<br/>
+如果你需要删除文章，可以直接在文件夹里删除。<br/><br/>
+【node_modules】hexo文件夹。<br/><br/>
+一般情况不需要修改，如果主题实际储存到了这里面。<br/>
+那么你需要切记两个source和config文件夹的区别。<br/><br/>
+【scaffolds】脚本文件夹。<br/>
+一般不需要修改。<br/><br/>
+【readme】最重要的文件，不写注释起码得写这个吧<br/><br/>
+【_config_yml】配置文件夹<br/><br/>
+根目录和主题两个config都是需要经常修改的。<br/>
+具体可查询hexo官网文档，这里举例几个经常的。<br/>
+主页：main/menu<br/>
+标题：title<br/>
+归档：archives<br/>
+分类：categories<br/>
+标签：tags<br/>
+图库：phoyos<br/>
+友链：friends<br/>
+关于我：about<br/>
+文字：text<br/>
+第二行文字：text2<br/>
+循环：loop<br/>
+副标题：subtitle<br/>
+解释：description<br/>
+作者：author<br/>
+语音：language<br/>
+所属时区：timezone<br/>
+
+<p>三、hexo常见问题<br/></p>
+<p style="color: #FF0000;">作者还在编写中...</p><br/>
+四、hexo主题常见问题<br/>
+
+<p>五、插件<br/></p>
 <p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
  
       <!-- reward -->
