@@ -102,7 +102,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">840</span>
+            <span class="post-count">1.2k</span>
         </span>
     </span>
 
@@ -111,7 +111,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -162,8 +162,8 @@ blog文件其实就是你的网页构成文件。<br/>
 里面的文件多是.md文件，如果你需要新建文章。<br/>
 <span id="more"></span><br/>
 可以使用：
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo new &quot;你的文章标题&quot;    #也可以重命名文件<br></code></pre></td></tr></table></figure>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo new &quot;你的文章标题&quot;    <br></code></pre></td></tr></table></figure>
+#也可以重命名文件
 
 <br/>
 如果你需要删除文章，可以直接在文件夹里删除。<br/><br/>
@@ -196,8 +196,29 @@ blog文件其实就是你的网页构成文件。<br/>
 <p>三、hexo常见问题<br/></p>
 <p style="color: #FF0000;">作者还在编写中...</p><br/>
 四、hexo主题常见问题<br/>
+1. hexo安装失败<br/>
+
+<ol start="2">
+<li><p>hexo路径错误<br/></p>
+</li>
+<li><p>hexo版本兼容<br/><br>请先查看您的hexo版本，输入以下代码至gitbase中即可查看：<br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">hexo -v<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>#请注意是在您的D&#x2F;blog文件夹里打开的gitbase <br/><br>查看 [hexo:XXX.XXX]的数字<br/><br>#个人建议使用版本v6.3.0<br/><br>然后查看您的npm版本，同理输入：<br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">npm -v<br></code></pre></td></tr></table></figure>
+<p>#推荐使用v10.1.0<br><br/><br>若差距过大请重新下载或更新旧的版本<br/><br>如果您是nodejs与npm存在版本差异可参考以下对照表：<br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">node版本	      LTS	 日期           V8       npm版本 node_module版本<br>Node.js 19.5.0	|	    | 2023-01-24  | 10.8.168.25| 9.3.1	|111<br>Node.js 19.4.0	|	    | 2023-01-05  | 10.8.168.25| 9.2.0	|111<br>Node.js 19.3.0	|	    | 2022-12-14  | 10.8.168.21| 9.2.0	|111<br>Node.js 19.2.0	|	    | 2022-11-29  | 10.8.168.20| 8.19.3	|111<br>Node.js 19.1.0	|	    | 2022-11-14  | 10.7.193.20| 8.19.3	|111<br>Node.js 19.0.1	|	    | 2022-11-04  | 10.7.193.13| 8.19.2	|111<br>Node.js 19.0.0	|	    | 2022-10-17  | 10.7.193.13| 8.19.2	|111<br>Node.js 18.13.0	| Hydrogen  | 2023-01-05  | 10.2.154.23| 8.19.3	|108<br>Node.js 18.12.1	| Hydrogen  | 2022-11-04  | 10.2.154.15| 8.19.2	|108<br>Node.js 18.12.0	| Hydrogen  | 2022-10-25  | 10.2.154.15| 8.19.2	|108<br></code></pre></td></tr></table></figure>
+<br/>
 
 <p>五、插件<br/></p>
+<ol>
+<li><p>看板娘<br/></p>
+</li>
+<li><p>评论<br/></p>
+</li>
+<li><p>浏览统计<br/><br>我采用的是busuanzi统计，拥有操作便捷易上手的特点。<br/></p>
+</li>
+</ol>
 <p>浏览量<span id="busuanzi_value_site_pv"></span>次<br>访问数<span id="busuanzi_value_site_uv"></span>人</p>
  
       <!-- reward -->
